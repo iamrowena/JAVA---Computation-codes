@@ -1,0 +1,19 @@
+import java.io.*; 
+public class Pacadalhin_Rowena  
+{
+ private static PrintStream p = System.out; 
+ public static BufferedReader num= new BufferedReader (new  
+InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException 
+ { 
+ int cars = 0; 
+  
+ do 
+ { 
+ p.println("I will passed"); 
+ cars++; 
+ } 
+ while (cars < 20); 
+  
+ } 
+}
