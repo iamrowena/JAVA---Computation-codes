@@ -1,0 +1,30 @@
+public class Pacadalhin_Rowena  
+{ 
+ private static PrintStream xp= System.out; 
+ public static BufferedReader num = new BufferedReader(new  InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException  { 
+ xp.print("Employee Name: ");  
+ String WHOYOU = num.readLine(); 
+  
+ xp.print("No. of Hour/s worked: "); 
+ int NOHRS = Integer.parseInt(num.readLine());   
+ double NETIN = NOHRS*98.64; 
+ xp.println("Net Income is "+NETIN); 
+  
+ double S3 = NETIN*.0927; 
+ xp.println("SSS is "+S3); 
+  
+ double PHILH = NETIN*.0765; 
+ xp.println("Philhealth is "+PHILH); 
+  
+ double PAGI = NETIN*.0712; 
+ xp.println("Pag-ibig is "+PAGI); 
+  
+ double TX = NETIN*.12; 
+ xp.println(" Tax is "+TX); 
+  
+ double TOTALDEDUC = (S3 + TX + PAGI + PHILH);  xp.println("Total Deduction is "+TOTALDEDUC);xp.println("");   
+ double NETPY = NETIN-TOTALDEDUC; 
+ xp.println("Net pay is "+NETPY); 
+ } 
+}
