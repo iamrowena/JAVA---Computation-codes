@@ -1,0 +1,19 @@
+import java.io.*; 
+public class Pacadalhin_Rowena  
+{ 
+ private static PrintStream p = System.out; 
+ public static BufferedReader num= new BufferedReader (new  
+InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException 
+ { 
+ String[] flowers = {"Lily", "Dahlia", "Rose", "Gumamela", "Sampaguita" , "Tulip"};   
+ int F = 0; 
+  
+ while (F < flowers.length) 
+ { 
+ p.println(flowers[F]); 
+ F++; 
+ } 
+  
+ } 
+} 
