@@ -1,0 +1,23 @@
+import java.io.*; 
+public class Pacadalhin_Rowena 
+{ 
+ public static BufferedReader num= new BufferedReader (new  InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException { 
+ System.out.println("Name: Rowena M. Pacadalhin");  System.out.println("Section: BSIT-2C") 
+ System.out.println(""); 
+  
+ System.out.print("Enter First number: "); 
+ int firstnum = Integer.parseInt(num.readLine());  System.out.print("Enter Second number: "); 
+ int secondnum = Integer.parseInt(num.readLine());   
+ double sum = firstnum + secondnum; 
+ double diff = firstnum - secondnum; 
+ double prod = firstnum * secondnum; 
+ double quo = firstnum / secondnum; 
+  
+ System.out.println("Total Sum is "+sum); 
+ System.out.println("Total Difference is "+diff); 
+ System.out.println("Total Product is "+prod); 
+ System.out.println("Total Quotient is "+quo); 
+ 
+ } 
+}
