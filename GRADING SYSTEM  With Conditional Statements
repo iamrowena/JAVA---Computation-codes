@@ -1,0 +1,77 @@
+/** GRADING SYSTEM 
+With Conditional Statements 
+(Only the Prelim Grade) */
+
+import java.io.*; 
+public class Pacadalhin_Rowena  
+{ 
+ private static PrintStream p= System.out; 
+ public static BufferedReader num = new BufferedReader(new  InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException   { 
+ //Lecture 
+ //Quizzes 
+ p.print("Enter Quiz#1: "); 
+ int QUIZ1 = Integer.parseInt(num.readLine()); 
+ p.print("Enter Quiz#2: "); 
+ int QUIZ2 = Integer.parseInt(num.readLine()); 
+ p.print("Enter Quiz#3: "); 
+ int QUIZ3 = Integer.parseInt(num.readLine()); 
+ p.print("Enter Quiz#4: "); 
+ int QUIZ4 = Integer.parseInt(num.readLine()); 
+ p.print("Enter Quiz#5: "); 
+ int QUIZ5 = Integer.parseInt(num.readLine()); 
+ double TQUIZ = (QUIZ1 + QUIZ2 + QUIZ3 + QUIZ4 + QUIZ5)/5*.30;  p.println("Total Quiz is: "+TQUIZ); 
+  
+ //Lecture Class Standing
+ p.print("Enter Homework: "); 
+ int HOME = Integer.parseInt(num.readLine()); 
+ p.print("Enter Behavior: "); 
+ int BEH= Integer.parseInt(num.readLine()); 
+ p.print("Enter Attendance:"); 
+ int ATT = Integer.parseInt(num.readLine()); 
+ p.print("Enter Recitation: "); 
+ int REC = Integer.parseInt(num.readLine()); 
+ double TCLASS = (HOME + ATT + BEH + REC)/4*.15;   
+ //Major Exam 
+ p.print("Enter Prelim Lecture Exam: "); 
+ int LECEXAM = Integer.parseInt(num.readLine());  double TLECEXAM = LECEXAM*.50; 
+ p.println("Total Prelim Lecture Exam: "+TLECEXAM);   
+ double TLECGRADE = (TQUIZ + TCLASS + TLECEXAM);  p.println("Total Lecture Grade is "+TLECGRADE);   
+ //Laboratory 
+ //Machine Problem 
+ p.print("Enter MP1: "); 
+ int MAC1 = Integer.parseInt(num.readLine()); 
+ p.print("Enter MP2: "); 
+ int MAC2 = Integer.parseInt(num.readLine()); 
+ p.print("Enter MP3: "); 
+ int MAC3 = Integer.parseInt(num.readLine()); 
+ p.print("Enter MP4: "); 
+ int MAC4 = Integer.parseInt(num.readLine()); 
+ double TOTALMAC = (MAC1 + MAC2 + MAC3 + MAC4)/4*.50;
+ p.println("Total Machine Problem Grade: "+TOTALMAC);   
+ //Class Standing 
+ p.print("Enter Activity: "); 
+ int ACT= Integer.parseInt(num.readLine()); 
+ p.print("Enter Seatwork: "); 
+ int SW = Integer.parseInt(num.readLine()); 
+ p.print("Enter Compilation: "); 
+ int COMPILE = Integer.parseInt(num.readLine());  double LABCS = (ACT + SW + COMPILE)/3*.10;  p.println("Total Laboratory Class Standing: "+LABCS);   
+ //Lab Major Examination 
+ p.print("Enter Prelim Laboratory Exam: "); 
+ int LABEXAM = Integer.parseInt(num.readLine());  double TLABEXAM = LABEXAM*.40; 
+ p.println("Total Prelim Lecture Exam: "+TLABEXAM);   
+ double TLABGRADE = (TOTALMAC + LABCS + TLABEXAM);  p.println("Total Laboratory Grade is "+TLABGRADE);  double PGRADE = (TLECGRADE*.40) + (TLABGRADE*.60);  p.println("Your Total Prelim Grade is "+PGRADE);   
+ if(PGRADE >= 97) 
+ p.println(" Grade = 1.00"); 
+ else if (PGRADE >= 94) 
+ p.println(" Grade = 1.25"); 
+ else if(PGRADE >= 92) 
+ p.println(" Grade = 1.50"); 
+ else if(PGRADE >= 89)
+ p.println(" Grade = 1.75");  else if(PGRADE >= 86)  p.println(" Grade = 2.00");  else if(PGRADE >= 83)  p.println(" Grade = 2.25");  else if(PGRADE >= 80)  p.println(" Grade = 2.50");  else if(PGRADE >= 77)  p.println(" Grade = 2.75");  else if(PGRADE >= 75)  p.println(" Grade = 3.00");  { 
+ if(PGRADE >= 75)  p.println("You Passed");  else 
+ p.println("Sorry. You Failed");  } 
+  
+  
+ } 
+}
