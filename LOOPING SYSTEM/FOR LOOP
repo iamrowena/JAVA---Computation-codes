@@ -1,0 +1,36 @@
+// one example
+
+import java.io.*; 
+public class Pacadalhin_Rowena  
+{ 
+ private static PrintStream p = System.out; 
+ public static BufferedReader num= new BufferedReader (new  
+InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException 
+ { 
+ String[] animals = {"Cow", "Eagle", "Frog", "Jaguar", "Dog" , "Hamster"}; 
+ for (int a = 0; a< animals.length; a++) 
+ { 
+ p.println(animals[a]); 
+ } 
+ } 
+} 
+
+
+//second
+example
+import java.io.*; 
+public class Pacadalhin_Rowena  
+{ 
+ private static PrintStream p = System.out; 
+ public static BufferedReader num= new BufferedReader (new  
+InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException 
+ { 
+ String[] animals = {"Cow", "Eagle", "Frog", "Jaguar", "Dog" , "Hamster"}; 
+ for (int a = 0; a< animals.length; a++) 
+ { 
+ p.println(animals[a]); 
+ } 
+ } 
+} 
