@@ -1,0 +1,47 @@
+import java.io.*; 
+public class Pacadalhin_Rowena  
+{ 
+ private static PrintStream p= System.out; 
+ public static BufferedReader num = new BufferedReader(new  InputStreamReader(System.in)); 
+ public static void main(String[] args)throws IOException   { 
+ p.print("Employee Name: ");  
+ String pangalan = num.readLine(); 
+ p.print("No. of Hour/s worked: "); 
+ int NOHRS = Integer.parseInt(num.readLine()); 
+ if(NOHRS == 40) 
+ { 
+ double NETIN = NOHRS*98.64; 
+ p.println("Net Income is: "+NETIN); 
+ double S3 = NETIN*.0828; 
+ p.println("SSS is: "+S3); 
+ double PHILH = NETIN*.0915; 
+ p.println("Philhealth is: "+PHILH); 
+ double PAGI = NETIN*.0702; 
+ p.println("Pag-ibig is: "+PAGI);
+  
+ double TX = NETIN*.12; 
+ p.println(" is: "+TX); 
+ double TOTALDEDUC = (S3 + TX + PAGI + PHILH);  p.println("Total Deduction is: "+TOTALDEDUC);  double NETPY = NETIN-TOTALDEDUC;  p.println("The Netpay is: "+NETPY); 
+ } 
+ else if(NOHRS > 40) 
+ { 
+ double NETIN = NOHRS*98.64; 
+ double OVERHRS = NOHRS - 40; 
+ double OVERFEE = NETIN * 1.5*98.64;   
+ double S3 = NETIN*.0828; 
+ double PHILH = NETIN*.0915; 
+ double PAGI = NETIN*.0702; 
+ double TX = NETIN*.12; 
+ double TOTALDEDUC = (S3 + TX + PAGI + PHILH);  double NETPY = NETIN-TOTALDEDUC;   
+ p.println("The Net Income is: "+NETIN);  p.println("The Over Hour/s is: "+OVERHRS);  p.println("The Over Fees is: "+OVERFEE);  p.println("The SSS is: "+S3); 
+ p.println("Philhealth is: "+PHILH);
+ p.println(" is: "+TX); 
+ p.println("Total Deduction is: "+TOTALDEDUC); 
+ p.println("The Netpay is: "+NETPY);  
+ } 
+ else 
+ { 
+ p.println("Invalid Hours"); 
+ }  
+} 
+}
