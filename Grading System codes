@@ -1,0 +1,218 @@
+import java.io.*;
+public class Pacadalhin_Rowena
+{
+private static PrintStream p = System.out;
+public static BufferedReader num= new BufferedReader (new
+InputStreamReader(System.in));
+public static void main(String[] args)throws IOException
+{
+//Prelim Lecture Grade//
+p.print("Enter Prelim Quiz#1: ");
+int preq1 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Quiz#2: ");
+int preq2 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Quiz#3: ");
+int preq3 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Quiz#4: ");
+int preq4 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Quiz#5: ");
+int preq5 = Integer.parseInt(num.readLine());
+double TOTALPQUIZ= (preq1+preq2+preq3+preq4+preq5)/5*.40;
+p.println("Total Prelim Quiz is: "+TOTALPQUIZ);p.println("");
+
+//Prelim Class Standing
+p.print("Enter Prelim Homework grade: ");
+int prehomew = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Attendance grade: ");
+
+int preatt = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Behavior grade: ");
+int prebehave = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Seatwork grade: ");
+int preseatw = Integer.parseInt(num.readLine());
+double TOTALPCLASS = (prehomew+ preatt + prebehave + preseatw)/4*.20;
+p.println("Total Lecture Class standing is: "+TOTALPCLASS);p.println("");
+
+//Prelim Lecture Exam
+p.print("Enter Prelim Lecture Exam: ");
+int PREEXAM = Integer.parseInt(num.readLine());
+double TOTALPEXAM = PREEXAM*.40;
+p.println("Total Prelim Lecture Exam is: "+TOTALPEXAM);
+double TOTALPGRADE = TOTALPQUIZ + TOTALPCLASS + TOTALPEXAM;
+p.println("Total Prelim Lecture grade is: "+TOTALPGRADE);p.println("");
+
+//Prelim Laboratory Grade
+p.print("Enter Prelim Perfromance Task#1: ");
+int prept1 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Perfromance Task#2: ");
+int prept2 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Perfromance Task#3: ");
+int prept3 = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Perfromance Task#4: ");
+int prept4 = Integer.parseInt(num.readLine());
+double TOTALPT = (prept1 + prept2 + prept3 + prept4)/4*.50;
+p.println("Total prelim Performance Task is: "+TOTALPT);p.println("");
+
+//Prelim Laboratory Class
+p.print("Enter Prelim Attendance grade: ");
+
+int prelabatt = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Compilation grade: ");
+int prelabbehave = Integer.parseInt(num.readLine());
+p.print("Enter Prelim Seatwork grade: ");
+int prelabseatw = Integer.parseInt(num.readLine());
+double TOTALPLABCLASS = (prelabatt + prelabbehave + prelabseatw)/3*.20;
+p.println("Total Laboratory Class standing is: "+TOTALPLABCLASS);p.println("");
+
+//Prelim Lecture Exam
+p.print("Enter Prelim Laboratory Exam: ");
+int PRELABEXAM = Integer.parseInt(num.readLine());
+double TOTALPLABEXAM = PRELABEXAM*.30;
+p.println("Total Prelim Lecture Exam is: "+TOTALPLABEXAM);
+double TOTALPLABGRADE = (TOTALPT + TOTALPLABCLASS + TOTALPLABEXAM);
+p.println("Prelim Total Laboratory Grade: "+TOTALPLABGRADE);p.println("");
+
+//Midterm Lecture Grade//
+p.print("Enter Midterm Quiz#1: ");
+int midq1 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Quiz#2: ");
+int midq2 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Quiz#3: ");
+int midq3 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Quiz#4: ");
+int midq4 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Quiz#5: ");
+int midq5 = Integer.parseInt(num.readLine());
+double TOTALMQUIZ= (midq1 + midq2 + midq3 + midq4 + midq5)/5*.40;
+p.println("Total Midterm Quiz is: "+TOTALMQUIZ);p.println("");
+
+//Midterm Lecture Class Standing
+p.print("Enter Midterm Homework grade: ");
+int midhomew = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Attendance grade: ");
+int midatt = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Behavior grade: ");
+int midbehave = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Seatwork grade: ");
+int midseatw = Integer.parseInt(num.readLine());
+double TOTALMCLASS = (midhomew+ midatt + midbehave + midseatw)/4*.20;
+p.println("Total Midterm Lecture Class standing is: "+TOTALMCLASS);p.println("");
+
+//Midterm Lecture Exam
+p.print("Enter Midterm Lecture Exam: ");
+int MIDEXAM = Integer.parseInt(num.readLine());
+double TOTALMEXAM = MIDEXAM*.40;
+p.println("Total Midterm Lecture Exam is: "+TOTALMEXAM);
+double TOTALMGRADE = TOTALMQUIZ + TOTALMCLASS + TOTALMEXAM;
+p.println("Total Midterm Lecture grade is: "+TOTALMGRADE);p.println("");
+
+//Midterm Laboratory Grade
+p.print("Enter Midterm Perfromance Task#1: ");
+int midpt1 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Perfromance Task#2: ");
+int midpt2 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Perfromance Task#3: ");
+int midpt3 = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Perfromance Task#4: ");
+int midpt4 = Integer.parseInt(num.readLine());
+double TOTALMIDPT = (midpt1 + midpt2 + midpt3 + midpt4)/4*.50;
+
+p.println("Total Midterm Performance Task is: "+TOTALMIDPT);p.println("");
+
+//Midterm Laboratory Class
+p.print("Enter Midterm Attendance grade: ");
+int midlabatt = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Compilation grade: ");
+int midlabbehave = Integer.parseInt(num.readLine());
+p.print("Enter Midterm Seatwork grade: ");
+int midlabseatw = Integer.parseInt(num.readLine());
+double TOTALMLABCLASS = (midlabatt + midlabbehave + midlabseatw)/3*.20;
+p.println("Total Laboratory Class standing is: "+TOTALMLABCLASS);p.println("");
+
+p.print("Enter Midterm Laboratory Exam: ");
+int MIDLABEXAM = Integer.parseInt(num.readLine());
+double TOTALMLABEXAM = MIDLABEXAM*.30;
+p.println("Total Midterm Lecture Exam is: "+TOTALMLABEXAM);
+double TOTALMLABGRADE = (TOTALMIDPT + TOTALMLABCLASS +
+TOTALMLABEXAM);
+p.println(" Total Midterm Laboratory Grade:"+TOTALMLABGRADE);p.println("");
+
+//Final Lecture Grade//
+p.print("Enter Final Quiz#1: ");
+int fnlq1 = Integer.parseInt(num.readLine());
+p.print("Enter Final Quiz#2: ");
+int fnlq2 = Integer.parseInt(num.readLine());
+p.print("Enter Final Quiz#3: ");
+int fnlq3 = Integer.parseInt(num.readLine());
+p.print("Enter Final Quiz#4: ");
+int fnlq4 = Integer.parseInt(num.readLine());
+p.print("Enter Final Quiz#5: ");
+
+int fnlq5 = Integer.parseInt(num.readLine());
+double TOTALFQUIZ= (fnlq1 + fnlq2 + fnlq3 + fnlq4 + fnlq5)/5*.40;
+p.println("Total Final Quiz is: "+TOTALFQUIZ);p.println("");
+
+//Midterm Lecture Class Standing
+p.print("Enter Final Homework grade: ");
+int fnlhomew = Integer.parseInt(num.readLine());
+p.print("Enter Final Attendance grade: ");
+int fnlatt = Integer.parseInt(num.readLine());
+p.print("Enter Final Behavior grade: ");
+int fnlbehave = Integer.parseInt(num.readLine());
+p.print("Enter Final Seatwork grade: ");
+int fnlseatw = Integer.parseInt(num.readLine());
+double TOTALFCLASS = (fnlhomew+ fnlatt + fnlbehave + fnlseatw)/4*.20;
+p.println("Total Final Lecture Class standing is: "+TOTALFCLASS);p.println("");
+
+//Final Lecture Exam
+p.print("Enter Final Lecture Exam: ");
+int FNLEXAM = Integer.parseInt(num.readLine());
+double TOTALFEXAM = FNLEXAM*.40;
+p.println("Total Final Lecture Exam is: "+TOTALFEXAM);
+double TOTALFGRADE = TOTALFQUIZ + TOTALFCLASS + TOTALFEXAM;
+p.println("Total Final Lecture grade is: "+TOTALFGRADE);p.println("");
+
+//Final Laboratory Grade
+p.print("Enter Final Performance Task#1: ");
+int fnlpt1 = Integer.parseInt(num.readLine());
+p.print("Enter Final Performance Task#2: ");
+int fnlpt2 = Integer.parseInt(num.readLine());
+p.print("Enter Final Performance Task#3: ");
+
+int fnlpt3 = Integer.parseInt(num.readLine());
+p.print("Enter Final Performance Task#4: ");
+int fnlpt4 = Integer.parseInt(num.readLine());
+double TOTALFNLPT = (fnlpt1 + fnlpt2 + fnlpt3 + fnlpt4)/4*.50;
+p.println("Total Final Performance Task is: "+TOTALFNLPT);p.println("");
+
+//Final Laboratory Class
+p.print("Enter Final Attendance grade: ");
+int fnllabatt = Integer.parseInt(num.readLine());
+p.print("Enter Final Compilation grade: ");
+int fnllabbehave = Integer.parseInt(num.readLine());
+p.print("Enter Final Seatwork grade: ");
+int fnllabseatw = Integer.parseInt(num.readLine());
+double TOTALFLABCLASS = (fnllabatt + fnllabbehave + fnllabseatw)/3*.20;
+p.println("Total Final Laboratory Class standing is: "+TOTALFLABCLASS);p.println("");
+
+//Final Laboratory Exam
+p.print("Enter Final Laboratory Exam: ");
+int FNLLABEXAM = Integer.parseInt(num.readLine());
+double TOTALFLABEXAM = FNLLABEXAM*.30;
+p.println("Total Final Lecture Exam is: "+TOTALMLABEXAM);
+double TOTALFLABGRADE = (TOTALFNLPT + TOTALFLABCLASS +
+TOTALFLABEXAM);
+p.println(" Total Final Laboratory Grade:"+TOTALFLABGRADE);p.println("");
+
+double prelim = (TOTALPGRADE*.55) + (TOTALPLABGRADE*.45);
+p.println("Total Prelim Grade is "+prelim);
+double mid = (TOTALMGRADE*.55) + (TOTALMLABGRADE*.45);
+p.println("Total Midterm Grade is "+mid);
+double fnl = (TOTALFGRADE*.55) + (TOTALFLABGRADE*.45);
+
+p.println("Total Final Grade is "+fnl);p.println("");
+
+double totalpmf = (prelim*.30) + (mid*.30) + (fnl*.40);
+p.println("Total Overall Grade is "+totalpmf);
+}
+}
